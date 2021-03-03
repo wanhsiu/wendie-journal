@@ -1,0 +1,335 @@
+@font-face {
+    font-family: 'eirene_sansregular';
+    src: url('eirenesans-regular-webfont.woff2') format('woff2'),
+         url('eirenesans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+  cursor: none !important;
+}
+
+
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+
+
+.homepage {
+    font-family: serif;
+    text-align: left;
+}
+
+
+  .header {
+      display:flex;
+      justify-content: space-between;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 300;  
+      font-style: normal;
+      font-size: 40px;
+      padding: 20px 20px 15px 15px;
+  }
+
+  .journal {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;  
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 15px 15px 15px;
+      
+  }
+
+  .header2 {
+    display:flex;
+    justify-content: flex-start;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;  
+    font-style: normal;
+    font-size: 18px;
+    margin: 0px, 5px, 0px, 5px; 
+  }
+
+  #date, #time2, #entry {
+      margin-left: 20px;
+      font-size:18px;
+  }
+
+
+
+  @media screen and (max-width: 375px) 
+  
+  {
+
+    .homedate, .hometime, .journalname {
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 300;  
+      font-style: normal;
+      display: inline-block;
+      font-size: 20px;
+      padding-right: 20px;
+      color:black;
+    }
+
+  }
+
+
+  @media screen and (max-width: 375px) 
+  
+  {
+
+    #date, #time2, #entry { 
+      display: flex;
+      justify-content: flex-start;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 300;  
+      font-style: normal;
+      font-size: 14px;
+      color:black;
+      }
+  }
+
+
+
+@media screen and (max-width: 375px) 
+  
+{
+
+ .header, .journal { 
+    display: inline-block;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;  
+    font-style: normal;
+    font-size: 30px;
+    color:black;
+}
+
+}
+
+
+.header2 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;  
+  font-style: normal;
+  font-size: 15px;
+  color:black;
+
+}
+
+.homedate, .hometime, .journalname {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;  
+  font-style: normal;
+  display: inline-block;
+  font-size: 18px;
+  color:black;
+
+}
+        
+
+        @media screen and (max-width: 500px) {
+                .homedate, .hometime, .journalname{
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 300;  
+                font-style: normal;
+                display: inline-block;
+                font-size: 13px;
+                color:black;
+            
+              }
+      }
+
+        @media screen and (max-width: 500px) {
+        .header, .journal{
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 300;  
+        font-style: normal;
+        display: inline-block;
+        font-size: 18px;
+        color:black;
+    
+      }
+}
+                
+      
+                @media screen and (min-width: 1000px) {
+                       h1 {
+                        font-family: 'Work Sans', sans-serif;
+                        font-weight: 300;  
+                        font-style: normal;
+                        display: inline-block;
+                        font-size: 30px;
+                        color:black;
+                
+                }
+                        
+                        }
+    
+  .homepage {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;  
+    font-style: normal;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0px 12px 5px;
+
+  }
+
+  a {
+    text-decoration: underline;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400; 
+    color: black;
+  }
+
+  a:hover {
+    color:black;
+    font-weight: 500;
+  }
+
+  .homedate {
+    width: 10%;
+    text-align: left;
+}
+  .hometime {
+  width: 20%;
+  text-align: left;
+}
+  
+   .journalname {
+      width: 50%;
+      text-align:left;
+  }
+
+
+ 
+    hr {
+        display: block;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        border-style: inset;
+        border: 0.5px solid black;
+    }
+
+    label {
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 300;  
+      font-style: normal;
+      display: inline-block;
+      font-size: 18px;
+      color:black;
+      padding-left:20px;
+    }
+
+
+
+.follower {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+  
+  .circle1 {
+    position: absolute;
+    -webkit-animation: pulse 2s infinite; /* Chrome, Safari, Opera */
+    animation: pulse 2s infinite;
+    background: black;
+    border-radius: 50%;
+    height: 0em;
+    width: 0em;
+    margin-top: 0em;
+    margin-left: 0em;
+  }
+
+  .circle2 {
+    position: absolute;
+    -webkit-animation: pulse 4s infinite; /* Chrome, Safari, Opera */
+    animation: pulse 4s infinite;
+    background:rgb(210, 255, 8);
+    border-radius: 50%;
+    height: 0em;
+    width: 0em;
+    margin-top: 0em;
+    margin-left: 0em;
+  }
+
+@keyframes pulse {
+
+    0% {
+      opacity: 0.2;
+      height: 1em;
+      width: 1em;
+      margin-top: -0.5em;
+      margin-left: -0.5em;
+    }
+    
+    50% {
+      opacity: 0.9;
+      height: 3em;
+      width: 3em;
+      margin-top: -1.5em;
+      margin-left: -1.5em;
+    }
+      
+    100% {
+      opacity: 0.2;
+      height: 1em;
+      width: 1em;
+      margin-top: -0.5em;
+      margin-left: -0.5em;
+    }
+
+  }
+   
+
+  .accordion {
+    color: #444;
+    cursor: none;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .accordion {
+    background-color: transparent;
+  }
+
+  .accordion:hover div {
+    color:black;
+    font-weight: 600;
+    transition: color 100ms;
+  }
+  
+  .active {
+    color:red;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;  
+    font-style: normal;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  a:active {
+    color: blue;
+  }
+
+
